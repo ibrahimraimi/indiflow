@@ -1,3 +1,3 @@
-import { pb } from '$lib/pocketbase/client';
+import { pb } from "$lib/pocketbase/client";
 
 pb.authStore.loadFromCookie(document.cookie);

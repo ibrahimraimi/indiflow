@@ -44,8 +44,8 @@
 		<div class="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
 			<h2 class="text-balance text-4xl font-medium lg:text-5xl">Our dream team</h2>
 			<p class="text-muted-foreground">
-				The people behind Indiflow are passionate about helping you achieve financial freedom
-				with transparency and trust.
+				The people behind Indiflow are passionate about helping you achieve financial freedom with
+				transparency and trust.
 			</p>
 		</div>
 		<div class="mt-12 md:mt-24">

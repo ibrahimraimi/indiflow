@@ -7,8 +7,8 @@
 		<div class="relative z-10 mx-auto max-w-xl space-y-6 text-center md:space-y-12">
 			<h2 class="text-balance text-4xl font-medium lg:text-5xl">How It Works</h2>
 			<p class="text-muted-foreground">
-				Getting a loan with Indiflow is simple and stress-free — just four easy steps to access
-				the funds you need.
+				Getting a loan with Indiflow is simple and stress-free — just four easy steps to access the
+				funds you need.
 			</p>
 		</div>
 

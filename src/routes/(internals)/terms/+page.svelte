@@ -20,9 +20,9 @@
 				<section class="space-y-4">
 					<h2 class="text-xl font-semibold md:text-2xl">1. Acceptance of Terms</h2>
 					<p class="leading-relaxed">
-						By accessing or using <strong>Indiflow</strong>, you agree to comply with and be
-						bound by these Terms of Service ("Terms"). If you do not agree, you may not use our
-						platform or services.
+						By accessing or using <strong>Indiflow</strong>, you agree to comply with and be bound
+						by these Terms of Service ("Terms"). If you do not agree, you may not use our platform
+						or services.
 					</p>
 				</section>
 
@@ -30,10 +30,10 @@
 				<section class="space-y-4">
 					<h2 class="text-xl font-semibold md:text-2xl">2. Our Services</h2>
 					<p class="leading-relaxed">
-						Indiflow provides quick-access personal and business loans through our online
-						platform. Our services include user registration, loan applications, loan approvals,
-						disbursement of funds, and repayment tracking. We are committed to providing safe,
-						transparent, and customer-friendly financial services.
+						Indiflow provides quick-access personal and business loans through our online platform.
+						Our services include user registration, loan applications, loan approvals, disbursement
+						of funds, and repayment tracking. We are committed to providing safe, transparent, and
+						customer-friendly financial services.
 					</p>
 				</section>
 

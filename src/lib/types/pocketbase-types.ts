@@ -1,12 +1,12 @@
-import type PocketBase from 'pocketbase';
-import type { RecordService } from 'pocketbase';
+import type PocketBase from "pocketbase";
+import type { RecordService } from "pocketbase";
 
 export enum Collections {
-	Users = 'users',
-	Loans = 'loans',
-	Repayments = 'repayments',
-	Transactions = 'transactions',
-	Settings = 'settings'
+	Users = "users",
+	Loans = "loans",
+	Repayments = "repayments",
+	Transactions = "transactions",
+	Settings = "settings"
 }
 
 export type IsoDateString = string;
@@ -35,9 +35,9 @@ export type UsersRecord = {
 	address?: string;
 	date_of_birth?: IsoDateString;
 	national_id?: string; // BVN/NIN etc.
-	employment_status?: 'employed' | 'self-employed' | 'unemployed';
+	employment_status?: "employed" | "self-employed" | "unemployed";
 	income?: number; // monthly income
-	role?: 'customer' | 'admin' | 'loan_officer';
+	role?: "customer" | "admin" | "loan_officer";
 	profile_complete?: boolean;
 } & AuthSystemFields;
 
@@ -47,10 +47,10 @@ export type LoansRecord = {
 	amount: number;
 	interest_rate: number; // %
 	term_months: number;
-	repayment_frequency: 'monthly' | 'weekly' | 'one-off';
+	repayment_frequency: "monthly" | "weekly" | "one-off";
 	start_date?: IsoDateString;
 	due_date?: IsoDateString;
-	status: 'pending' | 'approved' | 'rejected' | 'active' | 'completed' | 'defaulted';
+	status: "pending" | "approved" | "rejected" | "active" | "completed" | "defaulted";
 	approved_by?: RecordIdString; // relation → users (officer/admin)
 	collateral_details?: string;
 	notes?: string;
@@ -61,7 +61,7 @@ export type RepaymentsRecord = {
 	loan: RecordIdString; // relation → loans
 	amount_paid: number;
 	payment_date: IsoDateString;
-	method: 'bank_transfer' | 'card' | 'cash';
+	method: "bank_transfer" | "card" | "cash";
 	receipt_number?: string;
 	recorded_by?: RecordIdString; // relation → users
 } & BaseSystemFields;
@@ -69,7 +69,7 @@ export type RepaymentsRecord = {
 /** Optional ledger of money movements */
 export type TransactionsRecord = {
 	user: RecordIdString; // relation → users
-	type: 'loan_disbursement' | 'repayment' | 'fee';
+	type: "loan_disbursement" | "repayment" | "fee";
 	amount: number;
 	description?: string;
 } & BaseSystemFields;
@@ -108,9 +108,9 @@ export type CollectionResponses = {
 };
 
 export type TypedPocketBase = PocketBase & {
-	collection(idOrName: 'users'): RecordService<UsersResponse>;
-	collection(idOrName: 'loans'): RecordService<LoansResponse>;
-	collection(idOrName: 'repayments'): RecordService<RepaymentsResponse>;
-	collection(idOrName: 'transactions'): RecordService<TransactionsResponse>;
-	collection(idOrName: 'settings'): RecordService<SettingsResponse>;
+	collection(idOrName: "users"): RecordService<UsersResponse>;
+	collection(idOrName: "loans"): RecordService<LoansResponse>;
+	collection(idOrName: "repayments"): RecordService<RepaymentsResponse>;
+	collection(idOrName: "transactions"): RecordService<TransactionsResponse>;
+	collection(idOrName: "settings"): RecordService<SettingsResponse>;
 };

@@ -25,13 +25,13 @@ A SvelteKit-based SaaS starter template focused on user accounts and PocketBase 
 ## Repository structure (important folders)
 
 - `src/routes/` — App routes including `(auth)` and `(app)` groups
-	- `(auth)` — authentication pages (signup, login, logout, verify-email)
-	- `(app)` — landing page, dashboard and admin areas
+  - `(auth)` — authentication pages (signup, login, logout, verify-email)
+  - `(app)` — landing page, dashboard and admin areas
 - `src/lib/` — application libraries
-	- `pocketbase/` — PocketBase client initialization (`src/lib/pocketbase/client.ts`)
-	- `components/` — UI components (marketing, UI primitives)
-	- `stores/` — Svelte stores (e.g., `user` store)
-	- `types/` — TypeScript types including typed PocketBase definitions
+  - `pocketbase/` — PocketBase client initialization (`src/lib/pocketbase/client.ts`)
+  - `components/` — UI components (marketing, UI primitives)
+  - `stores/` — Svelte stores (e.g., `user` store)
+  - `types/` — TypeScript types including typed PocketBase definitions
 - `static/` — static assets (images, manifest)
 
 ## Quick start (local development)

@@ -20,10 +20,9 @@
 				<section class="space-y-4">
 					<h2 class="text-xl font-semibold md:text-2xl">1. Introduction</h2>
 					<p class="leading-relaxed">
-						Indiflow ("we," "us," "our") provides lending services through our online platform.
-						We are committed to protecting your privacy and ensuring your personal and financial
-						data is handled securely and in compliance with applicable Nigerian data protection
-						laws.
+						Indiflow ("we," "us," "our") provides lending services through our online platform. We
+						are committed to protecting your privacy and ensuring your personal and financial data
+						is handled securely and in compliance with applicable Nigerian data protection laws.
 					</p>
 				</section>
 

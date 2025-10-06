@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import { Server } from '@lucide/svelte';
+	import { goto } from "$app/navigation";
+	import { Server } from "@lucide/svelte";
 
-	import Button from '$lib/components/ui/button/button.svelte';
+	import Button from "$lib/components/ui/button/button.svelte";
 
 	interface Action {
 		label: string;
@@ -11,8 +11,8 @@
 	}
 
 	export let action: Action = {
-		label: 'Return to Home',
-		href: '/'
+		label: "Return to Home",
+		href: "/"
 	};
 
 	export let showCode: boolean = true;
@@ -26,7 +26,7 @@
 	}
 </script>
 
-<div class="flex min-h-screen w-full flex-col items-center justify-center bg-background p-4 md:p-6">
+<div class="bg-background flex min-h-screen w-full flex-col items-center justify-center p-4 md:p-6">
 	<div class="w-full max-w-md text-center">
 		<div class="mx-auto mb-6">
 			<Server class="mx-auto h-12 w-12 text-red-200" strokeWidth={1.5} />

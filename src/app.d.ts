@@ -1,5 +1,5 @@
-import type { AuthModel } from 'pocketbase';
-import type { UsersRecord } from '$lib/types/pocketbase-types';
+import type { AuthModel } from "pocketbase";
+import type { UsersRecord } from "$lib/types/pocketbase-types";
 
 export type UserAuthModel = (AuthModel & Partial<UsersRecord>) | null;
 
@@ -7,7 +7,7 @@ export type UserAuthModel = (AuthModel & Partial<UsersRecord>) | null;
 // for information about these interfaces
 declare global {
 	namespace App {
-		type PocketBase = import('pocketbase').default;
+		type PocketBase = import("pocketbase").default;
 		// interface Error {}
 		interface Locals {
 			pb: PocketBase;
